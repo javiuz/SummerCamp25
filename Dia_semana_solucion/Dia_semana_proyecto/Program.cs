@@ -5,12 +5,13 @@ var nombredia = "";
 while(true) { 
     Console.WriteLine("Introduce un número del 1 al 7 (o 0 para salir):"); 
     var dia = Console.ReadLine();
-    // Si el nº es 0 salimos
+    // Si el nº es 0, salimos del programa
     if(dia == "0") { 
         Console.WriteLine("Hasta Luego!");
         break;
     }
-    // Si el nº está entre 1 y 7 escribimos el día correspondiente de la semana
+    // Si el nº está entre 1 y 7, escribimos el día correspondiente de la semana y 
+    // si es otro nº o carácter, escribimos 'Día no válido'.
     switch (dia) { 
         case "1":
             nombredia = "Lunes";
@@ -37,7 +38,7 @@ while(true) {
             nombredia = "Día no válido";
             break;
     }
-    Console.WriteLine(nombredia); // Salida del nombre del día
+    Console.WriteLine(nombredia); // Salida del nombre del día (o del error)
 }
 
 
