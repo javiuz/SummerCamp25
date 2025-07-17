@@ -6,7 +6,7 @@ while(true) {
     Console.WriteLine("Introduce un número del 1 al 7 (o 0 para salir):"); 
     var dia = Console.ReadLine();
     // Si el nº es 0, salimos del programa
-    if(dia == "0") { 
+    if (dia == "0") { 
         Console.WriteLine("Hasta Luego!");
         break;
     }
